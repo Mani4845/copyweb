@@ -2,7 +2,7 @@
   "name": "copyweb",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://mani4845.github.io/ochiweb",
+  "homepage": "https://mani4845.github.io/copyweb",
   "type": "module",
   "scripts": {
     "dev": "vite",
