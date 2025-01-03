@@ -40,3 +40,25 @@
 .read-the-docs {
   color: #888;
 }
+
+
+button {
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.line {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease-in-out;
+}
+
+button:hover .line {
+  width: 100%;
+}
+

@@ -1,41 +1,17 @@
-
-import About from './components/About'
-import Eyes from './components/Eyes'
-import Featured from './components/Featured'
-import Landingpage from './components/Landingpage'
-import Marquee from './components/Marquee'
-import Navbar from './components/Navbar'
-import Smallcard from './components/Smallcard'
-import Secondabout from './components/Secondabout'
-
-
-import LocomotiveScroll from 'locomotive-scroll';
-
-
-
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Home from './components/Home';
+import Services from './components/Services/Services';
 
 function App() {
-
-  const locomotiveScroll = new LocomotiveScroll();
-
   return (
-    <>
-    <div className="w-full min-h-screen bg-zinc-900 text-white font-['Neue Montreal']">
-        <Navbar/>
-        <Landingpage/>
-        <Marquee/>
-        <About/>
-        <Eyes/>
-        <Featured/>
-        <Smallcard/>
-        <Secondabout/>
-
-       
-
-        </div>
-
-    </>
-  )
+    <div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Services" element={<Services />} />
+      </Routes>
+    </div>
+  );
 }
 
-export default App
+export default App;
