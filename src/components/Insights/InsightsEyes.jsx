@@ -1,20 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import LocomotiveScroll from 'locomotive-scroll'; 
+
   
 
-function ServicesEyes() {
-    useEffect(() => {
-        // Initialize Locomotive Scroll if it's used
-        const scroll = new LocomotiveScroll({
-          el: document.querySelector('[data-scroll-section]'),
-          smooth: true,
-        });
-    
-        // Cleanup on component unmount
-        return () => {
-          scroll.destroy();
-        };
-      }, []);
+function InsightsEyes() {
+   
   const [rotation, setRotation] = useState(0);
 
   useEffect(() => {
@@ -39,8 +28,8 @@ function ServicesEyes() {
   return ( 
     <div  className=''>
       <div  className=' '>
-        <div className='absolute flex gap-10 top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%]'>
-          <div className='w-[15vw] h-[15vw] flex justify-center items-center bg-white rounded-full'>
+        <div className='mt-[640px] absolute flex gap-10 top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%]'>
+          <div className='w-[20vw] h-[20vw] flex justify-center items-center bg-zinc-100 border-4 border-dark rounded-full'>
             <div className='relative h-2/3 w-2/3 flex bg-black rounded-full'>
               <div
                 style={{
@@ -52,7 +41,7 @@ function ServicesEyes() {
               </div>
             </div>
           </div>
-          <div className='w-[15vw] h-[15vw] bg-white rounded-full flex justify-center items-center'>
+          <div className='w-[20vw] h-[20vw] bg-zinc-100 border-4 border-dark rounded-full flex justify-center items-center'>
             <div className='relative h-2/3 w-2/3 flex justify-center items-center bg-black rounded-full'>
               <div
                 style={{
@@ -70,4 +59,4 @@ function ServicesEyes() {
   );
 }
 
-export default ServicesEyes;
+export default InsightsEyes;
